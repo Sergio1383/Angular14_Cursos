@@ -1,0 +1,6 @@
+<div *ngIf="item" class="task-item" [ngClass]="{'task-item-default': item.default==true}"
+  [ngStyle]="{'font-size':'20px'}">
+  <span>{{item.name}}</span>
+
+  <a (click)="delete(item)"> <em class="fa-solid fa-trash-can"></em></a>
+</div>

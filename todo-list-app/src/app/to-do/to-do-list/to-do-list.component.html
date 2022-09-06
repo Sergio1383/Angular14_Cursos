@@ -1,11 +1,20 @@
 <div class="to-do-list">
   Cantidad: {{list.length}}
   <ng-container *ngFor="let item of list">
-    <div class="task-item" *ngIf="item"  >
+    <!-- <div class="task-item" *ngIf="item"  >
       <span>{{item.name}}</span>
       <a (click)="delete(item)"> <em class="fa-solid fa-trash-can"></em></a>
-    </div>
+    </div> -->
+    <app-to-do-item [item]="item" [list]="list" ></app-to-do-item>
   </ng-container>
+
+  <!-- <div class="mb-3">
+    <label for="" class="form-label">Tasks</label>
+    <select class="form-control" name="slcTasks" [(ngModel)]="itemSelected">
+      <option *ngFor="let item of list" [value]="item.id" >{{item.name}}</option>
+    </select>
+    {{itemSelected | json}}
+  </div> -->
 
 
 </div>

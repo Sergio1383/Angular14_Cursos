@@ -10,19 +10,21 @@ export class ToDoListComponent implements OnInit {
 
   @Input() list: any[] = [];
 
+  itemSelected: any = {};
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  delete(item: any): void {
-    let index = this.list.findIndex(x => x.name == item.name);
+  // delete(item: any): void {
+  //   let index = this.list.findIndex(x => x.name == item.name);
 
-    console.log('index', index);
+  //   console.log('index', index);
 
-    // delete this.list[index];
-    this.list.splice(index,1);
+  //   // delete this.list[index];
+  //   this.list.splice(index,1);
 
-  }
+  // }
 
 }

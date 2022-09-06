@@ -1,0 +1,15 @@
+<h2>Users</h2>
+
+<div class="user-item" *ngFor="let user of users" (click)="edit(user)">
+  <!-- <a href="#" [routerLink]="['/home/users',user.id ]">
+    <strong>{{user.id}}</strong>
+    <span>{{user.name}}</span>
+  </a> -->
+
+  <strong>{{user.id}}</strong>
+  <span>{{user.name}}</span>
+  <!-- <a href="#" (click)="edit(user)">Edit</a> -->
+</div>
+
+
+<router-outlet></router-outlet>
