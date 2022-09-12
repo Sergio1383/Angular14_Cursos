@@ -1,0 +1,11 @@
+.user-details {
+  & .field {
+    display: flex;
+    gap: 4px;
+
+    & label{
+      color: #666;
+      width: 120px;
+    }
+  }
+}

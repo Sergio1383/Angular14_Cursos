@@ -1,0 +1,15 @@
+<nav class="nav justify-content-center">
+  <a class="nav-link" href="#" aria-current="page" [routerLink]="['/profile']" routerLinkActive="active">Mi Perfil</a>
+  <a class="nav-link " href="#" aria-current="page" [routerLink]="['/home']" routerLinkActive="active">Inicio</a>
+  <a class="nav-link" href="#" aria-current="page" [routerLink]="['/contacts']" routerLinkActive="active">Contactos</a>
+  <a class="nav-link" href="#" aria-current="page" (click)="logout()">Cerrar Sesión</a>
+</nav>
+
+
+<div class="d-flex justify-content-center col-md-12">
+
+  <div class="form-home col-12 col-md-2">
+    <p>Hola {{model.name}}</p>
+  </div>
+
+</div>

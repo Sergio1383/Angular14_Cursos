@@ -1,6 +1,25 @@
-
-<a href="#" [routerLink]="['..']" >Atrás</a>
-<h2>User {{id}} Details</h2>
+<a href="#" [routerLink]="['..']">Atrás</a>
 
 
-
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Detalle de Usuario: #{{id}}</h4>
+    <div *ngIf="model" class="user-details">
+      <div class="field">
+        <label>Nombres</label><span>{{model.firstName}}</span>
+      </div>
+      <div class="field">
+        <label>Apellidos</label><span>{{model.lastName}}</span>
+      </div>
+      <div class="field">
+        <label>Usuario(Login)</label><span>{{model.userName}}</span>
+      </div>
+      <div class="field">
+        <label>Email</label><span>{{model.email}}</span>
+      </div>
+    </div>
+    <div *ngIf="!model">
+      Usuario no encontrado
+    </div>
+  </div>
+</div>
